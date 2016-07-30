@@ -22,6 +22,7 @@ var PoC;
                 var csr = {};
                 csr.Templates = {};
                 csr.Templates.Fields = _this._overrides;
+                console.log("register", _this._overrides, csr);
                 SPClientTemplates.TemplateManager.RegisterTemplateOverrides(csr);
             };
             this._overrides = {};

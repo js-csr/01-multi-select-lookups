@@ -33,6 +33,7 @@ module PoC {
       var csr = <any>{}; 
       csr.Templates = <any>{}; 
       csr.Templates.Fields = this._overrides;
+      console.log("register", this._overrides, csr);
 
       SPClientTemplates.TemplateManager.RegisterTemplateOverrides(csr);  
     }
